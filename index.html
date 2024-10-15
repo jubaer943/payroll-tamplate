@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Payroll service</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Navbar Start -->
+      <div class="container-fluid nav-bar bg-transparent">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+          <a
+            href="index.html"
+            class="navbar-brand d-flex align-items-center text-center"
+          >
+            <div class="icon p-2 me-2">
+              <!-- <img
+                class="img-fluid"
+                src="img/icon-deal.png"
+                alt="Icon"
+                style="width: 30px; height: 30px"
+              /> -->
+            </div>
+            <h1 class="m-0 text-primary">PayRoll</h1>
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="about.html" class="nav-item nav-link">About Us</a>
+              <a href="services.html" class="nav-item nav-link">Services</a>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn btn-primary px-3 d-none d-lg-flex"
+              >GET A QUOTE</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- Navbar End -->
+
+      <!-- Header Start -->
+      <div class="container-fluid header bg-white p-0">
+        <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+          <div class="col-md-6 p-5 mt-lg-5">
+            <h1 class="display-5 animated fadeIn mb-4">
+              <span class="text-primary">Payroll services </span> made to grow
+              with you
+            </h1>
+            <p class="animated fadeIn mb-4 pb-2">
+              Get everything you need to streamline payday, track time, manage
+              HR, and offer team benefits with the #1 payroll provider.¹
+            </p>
+            <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn"
+              >See plan & pricing</a
+            >
+          </div>
+          <div class="col-md-6 animated fadeIn">
+            <div class="owl-carousel header-carousel">
+              <div class="owl-carousel-item">
+                <img class="img-fluid" src="img/test.webp" alt="" />
+              </div>
+              <div class="owl-carousel-item">
+                <img class="img-fluid" src="img/test.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+
+      <!-- Search Start -->
+      <div
+        class="container-fluid bg-primary mb-5 wow fadeIn"
+        data-wow-delay="0.1s"
+        style="padding: 35px"
+      >
+        <div class="container">
+          <div class="row g-2 flex-column align-items-center">
+            <div class="col-md-10">
+              <div class="row g-2">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control border-0 py-3"
+                    placeholder="Name *"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control border-0 py-3"
+                    placeholder="Email *"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="tel"
+                    class="form-control border-0 py-3"
+                    placeholder="Phone *"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <textarea
+                    name=""
+                    placeholder="Additional message *"
+                    class="form-control"
+                    id=""
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-dark border-0 w-100 py-3">
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Search End -->
+
+      <!-- Back to Top -->
+      <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a> -->
+    </div>
+
+    <!-- Category Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <h1 class="mb-3">Explore the features</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+            <a
+              class="cat-item d-block bg-light text-center rounded p-3"
+              href=""
+            >
+              <div class="rounded p-4">
+                <div class="icon mb-3">
+                  <img
+                    class="img-fluid"
+                    src="img/icon-apartment.png"
+                    alt="Icon"
+                  />
+                </div>
+                <h6>Stay covered at tax time</h6>
+                <span
+                  >With tax penalty protection, we'll pay up to $25,000 if you
+                  receive a penalty for any reason.**</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+            <a
+              class="cat-item d-block bg-light text-center rounded p-3"
+              href=""
+            >
+              <div class="rounded p-4">
+                <div class="icon mb-3">
+                  <img class="img-fluid" src="img/icon-villa.png" alt="Icon" />
+                </div>
+                <h6>Pay your team fast</h6>
+                <span
+                  >Hold onto cash longer and pay your team on your schedule with
+                  same-day direct deposit.**</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+            <a
+              class="cat-item d-block bg-light text-center rounded p-3"
+              href=""
+            >
+              <div class="rounded p-4">
+                <div class="icon mb-3">
+                  <img class="img-fluid" src="img/icon-house.png" alt="Icon" />
+                </div>
+                <h6>Taxes done for you</h6>
+                <span
+                  >We’ll calculate, file, and pay your payroll taxes, with an
+                  accuracy guarantee.**</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+            <a
+              class="cat-item d-block bg-light text-center rounded p-3"
+              href=""
+            >
+              <div class="rounded p-4">
+                <div class="icon mb-3">
+                  <img
+                    class="img-fluid"
+                    src="img/icon-housing.png"
+                    alt="Icon"
+                  />
+                </div>
+                <h6>Automatic payroll</h6>
+                <span
+                  >Reduce manual entries and free up your time when you set
+                  payroll to run on its own.**</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+            <a
+              class="cat-item d-block bg-light text-center rounded p-3"
+              href=""
+            >
+              <div class="rounded p-4">
+                <div class="icon mb-3">
+                  <img
+                    class="img-fluid"
+                    src="img/icon-building.png"
+                    alt="Icon"
+                  />
+                </div>
+                <h6>Manage time tracking</h6>
+                <span
+                  >Improve accuracy, approve timesheets, and save over 2 hours
+                  every time you run payroll.2</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+            <a
+              class="cat-item d-block bg-light text-center rounded p-3"
+              href=""
+            >
+              <div class="rounded p-4">
+                <div class="icon mb-3">
+                  <img
+                    class="img-fluid"
+                    src="img/icon-neighborhood.png"
+                    alt="Icon"
+                  />
+                </div>
+                <h6>Seamless integration</h6>
+                <span
+                  >Payroll, time tracking, and accounting data connect, so you
+                  can save nearly 4 hours a week.3</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+            <a
+              class="cat-item d-block bg-light text-center rounded p-3"
+              href=""
+            >
+              <div class="rounded p-4">
+                <div class="icon mb-3">
+                  <img
+                    class="img-fluid"
+                    src="img/icon-condominium.png"
+                    alt="Icon"
+                  />
+                </div>
+                <h6>Offer team benefits</h6>
+                <span
+                  >Attract skilled applicants, retain your best employees, and
+                  help them grow with you.</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+            <a
+              class="cat-item d-block bg-light text-center rounded p-3"
+              href=""
+            >
+              <div class="rounded p-4">
+                <div class="icon mb-3">
+                  <img class="img-fluid" src="img/icon-luxury.png" alt="Icon" />
+                </div>
+                <h6>Workforce app</h6>
+                <span
+                  >Your team can view pay info and W-2s, plus track hours with
+                  the QuickBooks Workforce app.**</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Category End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="about-img position-relative overflow-hidden p-5 pe-0">
+              <img class="img-fluid w-100" src="img/payroll_home1.jpg" />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <h1 class="mb-4">We love to partner with our clients</h1>
+            <p class="mb-4">
+              The Nationwide Payroll Company specialises in providing a
+              comprehensive payroll service for clients all over the United
+              Kingdom. From Small Businesses right through to Local Authorities,
+              we aim to provide a reliable, trustworthy and high quality service
+              which we pride ourselves on.
+            </p>
+            <p class="mb-4">
+              The main benefits of the Nationwide Payroll Company are as
+              follows:
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>Low Cost Payroll
+              Service
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>
+              No Set Up Fee
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>
+              No Hidden Charges
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>
+              Detailed analysis of payroll costs
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>
+              Full support from your own dedicated Payroll Manager
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>
+              Electronic Payslips & Payroll Reports
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>
+              Send RTI Data directly to HMRC
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>
+              The option to have your employees, Tax and NI paid by BACS
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>
+              Auto Enrolment support and guidance
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Call to Action Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="bg-light rounded p-3">
+          <div
+            class="bg-white rounded p-4"
+            style="border: 1px dashed rgba(0, 185, 142, 0.3)"
+          >
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <img
+                  class="img-fluid rounded w-100"
+                  src="img/sbseg.avif"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="mb-4">
+                  <h1 class="mb-3">Support your team, grow your dream</h1>
+                  <p>
+                    Now that business is expanding, get tools to simplify new
+                    demands and set everyone up for success.
+                  </p>
+                </div>
+                <a href="" class="btn btn-primary py-3 px-4 me-2"
+                  >Explore solutions</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Call to Action End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <h1 class="mb-3">Our Clients Say!</h1>
+        </div>
+        <div
+          class="owl-carousel testimonial-carousel wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="testimonial-item bg-light rounded p-3">
+            <div class="bg-white border rounded p-4">
+              <p>
+                “The customer support is outstanding. If I get disconnected from
+                people, they'll actually call me back. There has always been
+                really good follow up.”
+              </p>
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded"
+                  src="img/testimonial-1.jpg"
+                  style="width: 45px; height: 45px"
+                />
+                <div class="ps-3">
+                  <h6 class="fw-bold mb-1">Jennifer Splitt</h6>
+                  <small>Splitt Financial</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item bg-light rounded p-3">
+            <div class="bg-white border rounded p-4">
+              <p>
+                “We have a great benefits package that fits our employees and
+                their needs.”
+              </p>
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded"
+                  src="img/testimonial-2.jpg"
+                  style="width: 45px; height: 45px"
+                />
+                <div class="ps-3">
+                  <h6 class="fw-bold mb-1">Gerald Hamel</h6>
+                  <small>Make a Chess Move</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item bg-light rounded p-3">
+            <div class="bg-white border rounded p-4">
+              <p>
+                “It's pretty easy to run payroll—getting employees to add all
+                their own information makes it super fast on my side.”
+              </p>
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded"
+                  src="img/testimonial-3.jpg"
+                  style="width: 45px; height: 45px"
+                />
+                <div class="ps-3">
+                  <h6 class="fw-bold mb-1">Jeff DeGarmo</h6>
+                  <small>Jace Grae LLC</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-4">Get In Touch</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>info@example.com
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <a class="btn btn-link text-white-50" href="">About Us</a>
+            <a class="btn btn-link text-white-50" href="">Contact Us</a>
+            <a class="btn btn-link text-white-50" href="">Our Services</a>
+            <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+            <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-4">Newsletter</h5>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Payroll.com</a>, All
+              Right Reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/670e53af4304e3196ad1d805/1ia7vdqce";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>

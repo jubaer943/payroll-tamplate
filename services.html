@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Payroll service</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .pricing-card {
+        background-color: #f0f8f8;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .price-old {
+        text-decoration: line-through;
+        color: gray;
+      }
+      .price-current {
+        font-size: 2rem;
+        color: #28a745;
+      }
+      .btn-buy-now {
+        color: white;
+        margin-top: 10px;
+      }
+      .btn-buy-now:hover {
+        background-color: #218838;
+      }
+      h2 {
+        color: #264653;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      a {
+        color: #2a9d8f;
+        text-decoration: none;
+      }
+      .highlight {
+        color: #e76f51;
+        font-weight: bold;
+      }
+      .terms {
+        margin-top: 30px;
+        font-size: 0.9rem;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Navbar Start -->
+      <div class="container-fluid nav-bar bg-transparent">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+          <a
+            href="index.html"
+            class="navbar-brand d-flex align-items-center text-center"
+          >
+            <div class="icon p-2 me-2">
+              <!-- <img
+                class="img-fluid"
+                src="img/icon-deal.png"
+                alt="Icon"
+                style="width: 30px; height: 30px"
+              /> -->
+            </div>
+            <h1 class="m-0 text-primary">PayRoll</h1>
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link">About Us</a>
+              <a href="services.html" class="nav-item nav-link active"
+                >Services</a
+              >
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn btn-primary px-3 d-none d-lg-flex"
+              >GET A QUOTE</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- Navbar End -->
+
+      <!-- Header Start -->
+      <div class="container-fluid header bg-white p-0">
+        <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+          <div class="col-md-6 p-5 mt-lg-5">
+            <h1 class="display-5 animated fadeIn mb-4">Our Services</h1>
+            <nav aria-label="breadcrumb animated fadeIn">
+              <ol class="breadcrumb text-uppercase">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li
+                  class="breadcrumb-item text-body active"
+                  aria-current="page"
+                >
+                  services
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-md-6 animated fadeIn">
+            <img class="img-fluid" src="img/test.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+
+      <!-- Search Start -->
+      <div
+        class="container-fluid bg-primary mb-5 wow fadeIn"
+        data-wow-delay="0.1s"
+        style="padding: 35px"
+      ></div>
+      <!-- Search End -->
+
+      <!-- Team Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h1 class="mb-3">Bundle payroll and bookkeeping</h1>
+          </div>
+          <div class="row justify-content-center">
+            <!-- Pricing Card -->
+            <div class="col-md-3">
+              <div class="pricing-card p-3 shadow">
+                <h5 class="mb-3">Premium</h5>
+                <p class="price-old">$85</p>
+                <p class="price-current">$25.50/mo</p>
+                <p class="text-muted">Save 70% off first 3 months*</p>
+                <p class="text-muted">+ $9/employee/month</p>
+                <a href="#" class="btn btn-primary btn-buy-now btn-lg"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+            <!-- Duplicate this card 6 more times for 7 total -->
+            <div class="col-md-3">
+              <div class="pricing-card p-3 shadow">
+                <h5 class="mb-3">Elite</h5>
+                <p class="price-old">$130</p>
+                <p class="price-current">$39/mo</p>
+                <p class="text-muted">Save 70% off first 3 months*</p>
+                <p class="text-muted">+ $11/employee/month</p>
+                <a href="#" class="btn btn-primary btn-buy-now btn-lg"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pricing-card p-3 shadow">
+                <h5 class="mb-3">Elite</h5>
+                <p class="price-old">$130</p>
+                <p class="price-current">$39/mo</p>
+                <p class="text-muted">Save 70% off first 3 months*</p>
+                <p class="text-muted">+ $11/employee/month</p>
+                <a href="#" class="btn btn-primary btn-buy-now btn-lg"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pricing-card p-3 shadow">
+                <h5 class="mb-3">Elite</h5>
+                <p class="price-old">$130</p>
+                <p class="price-current">$39/mo</p>
+                <p class="text-muted">Save 70% off first 3 months*</p>
+                <p class="text-muted">+ $11/employee/month</p>
+                <a href="#" class="btn btn-primary btn-buy-now btn-lg"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+            <!-- Add more cards as needed -->
+          </div>
+          <!-- <p class="text-center pricingDetailsBtn" style="cursor: pointer">
+            Important pricing details, and product information
+          </p> -->
+
+          <div
+            class="pricingContant"
+            style="
+              display: none;
+              height: 0;
+              overflow: hidden;
+              transition: all 0.5s;
+            "
+          >
+            <p>
+              Money movement services are provided by Intuit Payments Inc.,
+              licensed as a Money Transmitter by the New York State Department
+              of Financial Services. For more information about Intuit Payments'
+              money transmission licenses, please visit
+              <a href="" target="_blank">Intuit Payments Licenses</a>.
+            </p>
+
+            <h2>Guarantees</h2>
+            <p>
+              <span class="highlight">Accuracy Guaranteed:</span> Available with
+              QuickBooks Online Payroll Core, Premium, and Elite. We assume
+              responsibility for federal and state payroll filings and payments
+              directly from your account(s) based on the data you supply. As
+              long as the information you provide us is correct and on time, and
+              you have sufficient funds in your account, we’ll file your tax
+              forms and payments accurately and on time or we’ll pay the
+              resulting payroll tax penalties. Guarantee terms and conditions
+              are subject to change at any time without notice.
+            </p>
+
+            <p>
+              <span class="highlight">Tax Penalty Protection:</span> If you
+              receive a tax notice and send it to us within 15 days of the tax
+              notice, we will cover the payroll tax penalty, up to $25,000.
+              Additional conditions and restrictions apply. Only QuickBooks
+              Online Payroll Elite users are eligible to receive tax penalty
+              protection.
+            </p>
+
+            <h2>Offer Terms</h2>
+            <p>
+              <span class="highlight"
+                >QuickBooks Online Payroll Discount Offer Terms:</span
+              >
+              70% off the monthly base price for QuickBooks Online Payroll Core,
+              Premium, or Elite (“Payroll”) is for the first 3 months of
+              service, starting from the date of enrollment, followed by the
+              then-current monthly list price. Your account will automatically
+              be charged on a monthly basis until you cancel. Offer expires
+              March 28, 2024.
+            </p>
+
+            <p>
+              <span class="highlight"
+                >QuickBooks Online Free 30-day Trial Offer Terms:</span
+              >
+              First 30 days of subscription to QuickBooks Products is free. At
+              the end of the free trial, you’ll be charged monthly thereafter at
+              the then-current price for the services selected. If you add or
+              remove services, your service fees will be adjusted accordingly.
+              Terms, conditions, and pricing are subject to change without
+              notice.
+            </p>
+
+            <h2>Features</h2>
+            <p>
+              <span class="highlight">QuickBooks Time:</span> Time tracking is
+              included in QuickBooks Online Payroll Premium and Elite. The
+              mobile app works with iPhone, iPad, and Android devices. Not all
+              features are available on mobile devices. Data access is subject
+              to provider network availability.
+            </p>
+
+            <p>
+              <span class="highlight">HR Services:</span> Provided by Mineral,
+              Inc. for QuickBooks Online Premium and Elite subscriptions. HR
+              advisor support is only available in QuickBooks Online Payroll
+              Elite.
+            </p>
+
+            <p>
+              <span class="highlight">Same-day Direct Deposit:</span> Available
+              for QuickBooks Online Payroll Premium and Elite users. Payroll
+              processed before 7 AM PT shall arrive the same business day. Only
+              for employees, not contractors.
+            </p>
+
+            <h2>Claims</h2>
+            <p>
+              <span class="highlight">#1 Online Payroll Service Provider:</span>
+              QuickBooks Payroll is the #1 online payroll service provider for
+              small businesses based on the number of customers as of 8/2021.
+            </p>
+
+            <p>
+              <span class="highlight">Save Over 2 Hours on Payroll:</span> On
+              average, businesses using QuickBooks Payroll save 2.79 hours each
+              pay period, based on a survey of 595 U.S. customers in January
+              2023.
+            </p>
+
+            <h2 class="terms">Terms, Conditions, and Pricing</h2>
+            <p>
+              All terms, conditions, pricing, special features, service, and
+              support options are subject to change without notice. Intuit
+              reserves the right to modify these at any time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Team End -->
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+              <h5 class="text-white mb-4">Get In Touch</h5>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York,
+                USA
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>info@example.com
+              </p>
+              <div class="d-flex pt-2">
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <h5 class="text-white mb-4">Quick Links</h5>
+              <a class="btn btn-link text-white-50" href="">About Us</a>
+              <a class="btn btn-link text-white-50" href="">Contact Us</a>
+              <a class="btn btn-link text-white-50" href="">Our Services</a>
+              <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+              <a class="btn btn-link text-white-50" href=""
+                >Terms & Condition</a
+              >
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <h5 class="text-white mb-4">Newsletter</h5>
+              <div class="position-relative mx-auto" style="max-width: 400px">
+                <input
+                  class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                  type="text"
+                  placeholder="Your email"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                >
+                  SignUp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="border-bottom" href="#">Payroll.com</a>, All
+                Right Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Back to Top -->
+      <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a> -->
+    </div>
+
+    <script>
+      document
+        .getElementsByClassName("pricingDetailsBtn")
+        .addEventListener("click", () => {
+          // const content = document.getElementsByClassName("pricingContant");
+          // content.style.display = "block";
+          // content.style.height = "unset";
+          console.log("clicking..");
+        });
+    </script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/670e53af4304e3196ad1d805/1ia7vdqce";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>
